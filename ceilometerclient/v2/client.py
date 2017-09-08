@@ -85,7 +85,7 @@ class Client(object):
 
     def _get_alarm_client(self, **kwargs):
         """Get client for alarm manager that redirect to aodh."""
-        kwargs = copy.deepcopy(kwargs)
+        #kwargs = copy.deepcopy(kwargs)
         self.alarm_auth_plugin = kwargs.get('auth_plugin')
         aodh_endpoint = kwargs.get('aodh_endpoint')
         if kwargs.get('session') is not None:
